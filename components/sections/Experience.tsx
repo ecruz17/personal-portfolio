@@ -15,7 +15,7 @@ const freeway = [
 export const Experience = () => {
   return (
     <div className="flex flex-col items-center" id="experience">
-      <section className="my-[15vh]">
+      <section className="my-[10vh]">
         <article>
           <div className='flex justify-center items-center'>
           <GlowingText

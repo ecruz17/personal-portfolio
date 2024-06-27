@@ -1,5 +1,8 @@
 
 //COMPONENTS
+export { Carousel } from "./Carousel";
+export { CarouselSlide } from "./CarouselSlide";
+export { StackCard } from "./StackCard";
 export { ExperienceCard } from "./ExperienceCard";
 export { Footer } from "./Footer";
 export {GitHubProfile} from "./GithubProfile";

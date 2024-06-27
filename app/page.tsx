@@ -1,6 +1,7 @@
 "use client"
 import { useRef } from "react";
 import { MainBtn, Stack, Experience, GlowingText, GitHubProfile } from "@/components";
+import { Projects } from "@/components/sections/Projects";
 
 //TODO: Add flare to cursor
 
@@ -42,7 +43,7 @@ export default function Home() {
       </div>
 
       < div className="flex flex-col items-center" ref={about} id="about" >
-        <section className="my-[15vh]">
+        <section className="my-[20vh]">
           <article>
             <div className="grid grid-cols-10 justify-center items-center gap-4 flex-wrap">
               <div className="col-span-10 sm:col-span-6">
@@ -103,6 +104,8 @@ export default function Home() {
       </div>
 
       <Experience />
+
+      <Projects />
       
       <Stack />
     </div>
