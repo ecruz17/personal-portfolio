@@ -1,11 +1,10 @@
 "use client"
 import React, { useState } from "react";
 import { useKeenSlider } from "keen-slider/react";
+import { CarouselSlide } from "./CarouselSlide";
 import "keen-slider/keen-slider.min.css";
 import "./CarouselStyles.css";
-import { MainBtn } from "./MainBtn";
-import Link from "next/link";
-import { CarouselSlide } from "./CarouselSlide";
+import { describe } from "node:test";
 
 export const Carousel = () => {
   const [currentSlide, setCurrentSlide] = React.useState(0)
@@ -21,48 +20,61 @@ export const Carousel = () => {
     slides: {
       origin: "center",
       perView: 2,
-      spacing: 15,
+      spacing: 10,
     },
   })
 
   const slides = [
     {
       title: "VisuaLoom AI",
-      website: "",
-      img: ""
+      website: "https://visualoom-ai.vercel.app/",
+      img: "/visualoom.png",
+      description: "Image generation WebApp made with NextJS, TypeScript, TailwindCSS, AWS Lambda, S3, API Gateway, DynamoDB & API Gateway"
     },
     {
       title: "Expenses WebApp",
-      website: "",
-      img: ""
-    },
-    {
-      title: "React - Issues Filter",
-      website: "",
-      img: ""
+      website: "https://gastos-app-smoky.vercel.app/",
+      img: "/gastos_app.png",
+      description: "Expenses tracking WebApp made with React + Vite, TypeScript, React Context & Local Storage Management"
     },
     {
       title: "Notes - GoogleOauth",
-      website: "",
-      img: ""
+      website: "https://notes-andxv00s6-emir-cruzs-projects.vercel.app/",
+      img: "/notes_app.png",
+      description: "Notes WebApp made with NextJS, JavaScript, TailwindCSS, Google OAuth & Firebase"
     },
     {
-      title: "La Ferreteria - WebApp",
-      website: "",
-      img: ""
+        title: "React Query - Issues Filter",
+        website: "https://react-query-filter-1xxfnk8f5-emir-cruzs-projects.vercel.app/",
+        img: "/react_issues.png",
+        description: "React + Vite + ReactQuery"
     },
+    {
+        title: "React + Zustand",
+      website: "https://patients-zustand.vercel.app/",
+        img: "/patients.png",
+        description: "React + Vite w/ Zuztand & React Hook Form"
+    },
+      {
+        title: "La Ferreteria - WebApp",
+        website: "https://ecruz17.github.io/la-ferreteria-app/",
+        img: "/la_ferreteria.png",
+        description: "Full-Stack CRUD WebApp created with MERN stack"
+      },
   ]
 
   return (
     <>
       <div className="navigation-wrapper">
-        <div ref={sliderRef} className="keen-slider rounded-md mt-10">
+        <div ref={sliderRef} className="keen-slider rounded-md mt-14">
           {
             slides.map((slide, index) => (
               <CarouselSlide
                 key={index}
                 title={slide.title}
                 website={slide.website}
+                img={slide.img}
+                description={slide.description}
               />
             ))
           }
@@ -91,18 +103,12 @@ export const Carousel = () => {
       </div>
       {loaded && instanceRef.current && (
         <div className="dots">
-          {[
-            ...Array(instanceRef.current.track.details.slides.length).keys(),
-          ].map((idx) => {
+          {Array.from({ length: instanceRef.current.track.details.slides.length }, (_, idx) => idx).map((idx) => {
             return (
-              <button
-                key={idx}
-                onClick={() => {
-                  instanceRef.current?.moveToIdx(idx)
-                }}
-                className={"dot" + (currentSlide === idx ? " active" : "")}
-              ></button>
-            )
+              <button key={idx}>
+                {idx}
+              </button>
+            );
           })}
         </div>
       )}

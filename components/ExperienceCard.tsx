@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
@@ -8,7 +9,7 @@ interface Props {
   description: string;
   keyPoints?: string[];
   color?: string;
-  logo?: string;
+  logo: string;
   website: string;
 }
 
@@ -26,7 +27,7 @@ export const ExperienceCard = ({ company, charge, duration, keyPoints, descripti
         </div>
 
         <div className='flex justify-end items-center'>
-          <img src={logo} alt="Company_Logo" className='rounded-lg w-40'/>
+          <Image src={logo} alt="Company_Logo" className='rounded-lg w-40'/>
         </div>
         
         <div className='col-span-2'>

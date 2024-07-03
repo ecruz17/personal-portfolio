@@ -2,8 +2,8 @@
 import { useRef } from "react";
 import { MainBtn, Stack, Experience, GlowingText, GitHubProfile } from "@/components";
 import { Projects } from "@/components/sections/Projects";
-
-//TODO: Add flare to cursor
+import Link from "next/link";
+import { FadeInComponent } from '../components/FadeInComponent';
 
 export default function Home() {
 
@@ -15,8 +15,10 @@ export default function Home() {
         <div className="flex flex-col justify-center items-center">
           {/* Title */}
           <div className="flex flex-row justify-between">
-            <code className="text-5xl md:text-7xl">
+            <code className="text-5xl md:text-7xl shadow-lg">
+              <span className="text-blueSubtitle absolute blur-lg shadow-lg animate-pulse">ecruz</span>
               <span className="text-blueSubtitle">ecruz</span>
+              <span className="blur-lg absolute animate-pulse">dev</span>
               <span>dev</span>
             </code>
           </div>
@@ -25,12 +27,13 @@ export default function Home() {
             Ready to help you out!
           </div>
           <div className="flex flex-row mt-5 gap-2">
-            <MainBtn
-              text="DOWNLOAD CV"
-              isSecondary={false}
-              //TODO: Implement Download CV
-              onClick={()=>{}}
-            />
+            <Link href="./ecruz_cv.pdf" download passHref>
+              <MainBtn
+                text="DOWNLOAD CV"
+                isSecondary={false}
+                onClick={()=>{}}
+              />
+            </Link>
             <MainBtn
               text="ABOUT ME"
               isSecondary={true}
@@ -43,16 +46,17 @@ export default function Home() {
       </div>
 
       < div className="flex flex-col items-center" ref={about} id="about" >
-        <section className="my-[20vh]">
+        <section className="my-[25vh] ">
           <article>
             <div className="grid grid-cols-10 justify-center items-center gap-4 flex-wrap">
               <div className="col-span-10 sm:col-span-6">
-
-                <GlowingText
-                  text="About Me"
-                />
+              <FadeInComponent>
+                  <GlowingText
+                    text="About Me"
+                  />
+              </FadeInComponent>
                 <p className="text-md lg:text-xl mt-10">
-                  - Hi! I'm <strong className="text-blueSubtitle"> Emir Cruz Maldonado</strong>, a full time <u className="font-semibold"> Software Developer</u> specialized in Web and Mobile applications development, I've been coding since highschool but I started loving computers since I was a <strong>child.</strong> I've worked with experts in the field, from a startup of a logistics app to a company specialized in developing with the unfamous <strong className="bg-blueSecondary px-1 w-fit">AWS</strong>.
+                  Hi! I&apos;m <strong className="text-blueSubtitle">Emir Cruz Maldonado</strong>, a dedicated <u className="font-semibold">Software Developer</u> specializing in Web and Mobile application development. My journey in coding began in high school, but my passion for computers has been a part of me since childhood. I&apos;ve had the opportunity to collaborate with industry experts, contributing to projects ranging from a startup logistics app to a company renowned for its work with <strong className="bg-blueSecondary px-1 w-fit">AWS</strong>.
                 </p>
               </div>
               <div className="col-span-10 sm:col-span-4 mt-10">
@@ -61,10 +65,11 @@ export default function Home() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-              <div className="col-span-2 md:col-span-1 font-semibold text-2xl bg-blueBackground rounded-md p-6">
+              <FadeInComponent>
+                <div className="col-span-2 md:col-span-1 font-semibold text-2xl bg-blueBackground rounded-md p-6">
                 SOFT SKILLS
                 <ul className="text-lg font-medium">
-                  - C2 English Level
+                  - C1 English Level
                 </ul>
                 <ul className="text-lg font-medium">
                   - Collaboration
@@ -75,7 +80,9 @@ export default function Home() {
                 <ul className="text-lg font-medium">
                   - Attention to  <strong className="text-blueSubtitle">detail</strong>
                 </ul>               
-              </div>
+                </div>
+              </FadeInComponent>
+              <FadeInComponent direction="right">
               <div className="col-span-2 md:col-span-1 font-semibold text-2xl bg-blueBackground rounded-md p-6">
                 INTERESTS
                 <ul className="text-lg font-medium">
@@ -87,17 +94,25 @@ export default function Home() {
                 <ul className="text-lg font-medium">
                   - Web & Mobile Development
                 </ul>              
-              </div>
+                <ul className="text-lg font-medium">
+                  - Latest Tech News
+                </ul>              
+                </div>
+              </FadeInComponent>
             </div>          
             <div className="flex gap-2 justify-center items-center mt-6">
-              <p className="text-sm md:text-xl lg:text-2xl">{`<HitMeUp>`}</p>
+              <FadeInComponent>
+                <p className="text-sm md:text-xl lg:text-2xl">{`<HitMeUp>`}</p>
+              </FadeInComponent>
               <MainBtn text={"CONTACT ME"} onClick={() => {
                 const element = document.getElementById("footer");
                 if (element) {
                   element.scrollIntoView({ behavior: 'smooth' });
                 }
               }} />
-              <p className="text-sm md:text-xl lg:text-2xl">{`</HitMeUp>`}</p>
+              <FadeInComponent direction="right">
+                <p className="text-sm md:text-xl lg:text-2xl">{`</HitMeUp>`}</p>
+              </FadeInComponent>
               </div>
           </article>
         </section>

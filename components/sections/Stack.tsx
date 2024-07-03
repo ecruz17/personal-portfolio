@@ -1,5 +1,6 @@
 import React from 'react';
 import { GlowingText, StackCard } from '..';
+import { FadeInComponent } from '../FadeInComponent';
 
 const frontend = [
   {
@@ -101,10 +102,6 @@ const others = [
     icon: "https://img.icons8.com/color/96/linux--v1.png"
   },
   {
-    name: "Android Emulators",
-    icon: "https://img.icons8.com/external-solidglyph-m-oki-orlando/64/external-Emulator-android-app-development-solidglyph-m-oki-orlando.png"
-  },
-  {
     name: "Python",
     icon: "https://img.icons8.com/color/480/python--v1.png"
   },
@@ -115,9 +112,11 @@ export const Stack = () => {
     <div className="w-full my-20" id='stack'>
       <section>
         <article>
+          <FadeInComponent>
           <GlowingText
             text="Tech Stack"
             />
+          </FadeInComponent>
           {/* FRONTEND */}
           <div className='flex justify-start items-center gap-2 mt-10'>
             <span className='h-1 bg-white w-6 rounded-sm' />

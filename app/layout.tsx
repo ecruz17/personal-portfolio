@@ -1,16 +1,14 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import { Kanit } from 'next/font/google'
 import './globals.css'
 import {Footer} from '../components/Footer'
 import ResponsiveNav from '@/components/ResponsiveNav'
 
-// const inter = Inter({ subsets: ['latin'] })
 const kanit = Kanit({ subsets: ['latin'], weight: ['200', '300', '400', '600'] })
 
 export const metadata: Metadata = {
-  title: "Emir - Software Dev",
-  description: "Landingpage for the Ecruz's Portfolio"
+  title: "ecruz portfolio",
+  description: "Landing page for the Ecruz's Portfolio",
 }
 
 export default function RootLayout({

@@ -1,5 +1,6 @@
 import React from 'react';
 import { ExperienceCard, GlowingText } from '..';
+import { FadeInComponent } from '../FadeInComponent';
 
 const mxmart = [
 'Developed AWS-based applications with Next.js, TypeScript, ReactQuery, and Tailwind CSS.',
@@ -18,14 +19,17 @@ export const Experience = () => {
       <section className="my-[10vh]">
         <article>
           <div className='flex justify-center items-center'>
+          <FadeInComponent direction='right'>
           <GlowingText
             text="Experience"
             textSize='text-5xl md:text-8xl'
-            />
+              />
+          </FadeInComponent>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
             <div className="col-span-1 md:col-span-2">
+            <FadeInComponent>
               <ExperienceCard 
               company='MxMart Solutions'
               charge='Front End Developer' 
@@ -34,10 +38,12 @@ export const Experience = () => {
               keyPoints={mxmart} 
                 logo='/mxmart_logo.png'
                 website='https://mxmartsolutions.com/'
-              />
+                />
+            </FadeInComponent>
             </div>
             
             <div className="col-span-1 md:col-end-4 md:col-span-2">
+              <FadeInComponent direction='right'>
               <ExperienceCard 
               company='BrightCoders'
               charge='React Native Mobile Developer'
@@ -48,10 +54,12 @@ connection to APIs such as Firebase. In addition to developing fundamental skill
 such as teamwork and effective communication using an agile methodology.'
                 logo='/brightcoders_logo.png'
                 website='https://www.brightcoders.com/'
-              />
+                />
+              </FadeInComponent>
             </div>
             
             <div className="col-span-1 md:col-span-2">
+              <FadeInComponent>
               <ExperienceCard 
               company='Universidad de Colima'
               charge='Full Stack Developer'
@@ -62,10 +70,12 @@ designed from scratch in Figma. Created the backend with Node.js and a NoSQL dat
 featuring validated login and encrypted passwords using the bcrypt algorithm, and supported multiple 
 profile management. Deployed the backend on Railway.app and the front end on GitHub Pages.'
                 website='https://github.com/ecruz17/la-ferreteria-app'
-              />
+                />
+              </FadeInComponent>
             </div>
 
             <div className="col-span-1 md:col-end-4 md:col-span-2">
+              <FadeInComponent direction='right'>
               <ExperienceCard 
                 company='FreeWay'
                 charge='Mobile Developer'
@@ -74,10 +84,12 @@ profile management. Deployed the backend on Railway.app and the front end on Git
                 website='https://www.linkedin.com/company/freeway-mx/'
                 logo='/freeway_logo.jpeg'
                 keyPoints={freeway}
-              />
+                />
+              </FadeInComponent>
             </div>
             
             <div className="col-span-1 md:col-span-2">
+              <FadeInComponent>
               <ExperienceCard
                 company='Universidad de Colima'
                 charge='Student'
@@ -85,7 +97,8 @@ profile management. Deployed the backend on Railway.app and the front end on Git
                 description='Cursed the "Software Engineer" educational program for 4 years with the following objective: Develop projects and technological solutions for automation, data process management, and information generation through the use of various programming languages, environments, and software development methodologies, in accordance with the well-being and safety of society.'
                 logo='/udc_logo.png'
                 website='https://www.ucol.mx/estudia-udec/oferta-superior-licenciatura,191.htm'
-              />
+                />
+              </FadeInComponent>
             </div>
           </div>
         </article>
