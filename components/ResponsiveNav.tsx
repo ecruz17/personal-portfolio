@@ -49,12 +49,12 @@ const Navbar = () => {
         ))}
       </ul>
 
-      <div onClick={handleNav} className='md:hidden cursor-pointer'>
+      <div onClick={handleNav} className='md:hidden cursor-pointer mr-10'>
         {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
       </div>
 
       <ul
-        className={`fixed md:hidden top-0 left-0 w-[60%] h-full  bg-blueBackground ease-in-out duration-500 z-30 transform ${nav ? 'translate-x-0' : '-translate-x-full'
+        className={`fixed md:hidden top-0 left-0 w-[60%] h-full bg-blueBackground ease-in-out duration-500 z-30 transform ${nav ? 'translate-x-0' : '-translate-x-full'
           }`}
       >
         <div
