@@ -19,17 +19,18 @@ const Navbar = () => {
   ];
 
   return (
-    <div className='fixed z-30 bg-blueBackground flex justify-between items-center w-screen px-4 h-14 font-semibold shadow-md'>
-      <code
+    <div className='fixed z-30 rounded-b-lg w-full bg-blueBackground flex justify-between items-center px-4 h-14 font-semibold shadow-md'>
+      <div
         id='home'
         onClick={() => {
           window.scrollTo({ top: 0, behavior: 'smooth' });
         }}
+        className='cursor-pointer'
       >
-        <h2 className='text-2xl font-medium text-blueSubtitle flex items-center cursor-pointer hover:scale-110 duration-75'>
+        <h2 className='text-2xl font-medium text-blueSubtitle flex items-center cursor-pointer hover:scale-105 duration-75'>
           ecruz<p className='text-white'>dev</p>
         </h2>
-      </code>
+      </div>
 
       <ul className='hidden md:flex'>
         {navItems.map(item => (
@@ -48,29 +49,30 @@ const Navbar = () => {
         ))}
       </ul>
 
-      <div onClick={handleNav} className='md:hidden'>
+      <div onClick={handleNav} className='md:hidden cursor-pointer'>
         {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
       </div>
 
       <ul
-        className={`fixed md:hidden top-0 left-0 w-[60%] h-full border-r border-r-gray-900 bg-blueBackground ease-in-out duration-500 z-30 transform ${nav ? 'translate-x-0' : '-translate-x-full'
+        className={`fixed md:hidden top-0 left-0 w-[60%] h-full  bg-blueBackground ease-in-out duration-500 z-30 transform ${nav ? 'translate-x-0' : '-translate-x-full'
           }`}
       >
-          <code
-            id='home'
-            onClick={() => {
-              window.scrollTo({ top: 0, behavior: 'smooth' });
+        <div
+          id='home'
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
           }}
-          >
-            <h2 className='py-3 px-4 text-2xl font-medium text-blueSubtitle flex items-center cursor-pointer hover:scale-110 duration-75'>
-              ecruz<p className='text-white'>dev</p>
-            </h2>
-          </code>
+          className='cursor-pointer'
+        >
+          <h2 className='py-3 px-4 text-2xl font-medium text-blueSubtitle flex items-center cursor-pointer hover:scale-105 duration-75'>
+            ecruz<p className='text-white'>dev</p>
+          </h2>
+        </div>
 
         {navItems.map(item => (
           <li
             key={item.id}
-            className='p-2 uppercase border-b border-gray-600 cursor-pointer hover:bg-colorLightGreen hover:text-blueSubtitle duration-100'
+            className='p-4 uppercase border-b border-gray-600 cursor-pointer hover:bg-colorLightGreen hover:text-blueSubtitle duration-100'
             onClick={() => {
               const element = document.getElementById(item.path);
               if (element) {

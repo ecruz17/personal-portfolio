@@ -29,12 +29,12 @@ export default function RootLayout({
         <meta name="twitter:card" content="/thumbnail.png" />
       </Head>
     <html lang="en">
-      <body className={`${kanit.className} flex flex-col bg-colorBg overflow-x-hidden`}>
-        <ResponsiveNav />
+        <body className={`${kanit.className} flex flex-col bg-colorBg overflow-x-hidden`}>
+            <ResponsiveNav />
         {
           children
-        }       
-        <Footer />
+          }       
+            <Footer />
       </body>
       </html>
     </>
