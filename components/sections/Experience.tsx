@@ -15,10 +15,10 @@ const freeway = [
 
 export const Experience = () => {
   return (
-    <div className="flex flex-col items-center" id="experience">
+    <div className="flex flex-col" id="experience">
       <section className="my-[10vh]">
         <article>
-          <div className='flex justify-center items-center'>
+          <div className='flex justify-center'>
           <FadeInComponent direction='right'>
           <GlowingText
             text="Experience"
@@ -27,7 +27,7 @@ export const Experience = () => {
           </FadeInComponent>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 overflow-x-hidden">
             <div className="col-span-1 md:col-span-2">
             <FadeInComponent>
               <ExperienceCard 
@@ -41,42 +41,42 @@ export const Experience = () => {
                 />
             </FadeInComponent>
             </div>
-            
-            <div className="col-span-1 md:col-end-4 md:col-span-2">
+
+            <div className="col-span-1 md:col-start-2 md:col-span-2 overflow-x-hidden">
               <FadeInComponent direction='right'>
-              <ExperienceCard 
+              <ExperienceCard
               company='BrightCoders'
               charge='React Native Mobile Developer'
               duration='May 2023 – Sep 2023'
-                description='Developed mobile applications with technologies such as React Native with TypeScript, while implementing 
-good practices, test-based development and tools for managing local and remote repositories as well as 
-connection to APIs such as Firebase. In addition to developing fundamental skills in software development 
-such as teamwork and effective communication using an agile methodology.'
-                logo='/brightcoders_logo.png'
-                website='https://www.brightcoders.com/'
-                />
+              description='Developed mobile applications with technologies such as React Native with TypeScript, while implementing
+              good practices, test-based development and tools for managing local and remote repositories as well as
+              connection to APIs such as Firebase. In addition to developing fundamental skills in software development
+              such as teamwork and effective communication using an agile methodology.'
+              logo='/brightcoders_logo.png'
+              website='https://www.brightcoders.com/'
+              />
               </FadeInComponent>
             </div>
-            
-            <div className="col-span-1 md:col-span-2">
+
+            <div className="col-span-1 md:col-span-2 overflow-x-hidden">
               <FadeInComponent>
-              <ExperienceCard 
+              <ExperienceCard
               company='Universidad de Colima'
               charge='Full Stack Developer'
               duration='Feb 2023 – May 2023 '
               logo='/udc_logo.png'
-              description='Developed a comprehensive web application for a fictional hardware store using React.js for the front end, 
-designed from scratch in Figma. Created the backend with Node.js and a NoSQL database on MongoDB, 
-featuring validated login and encrypted passwords using the bcrypt algorithm, and supported multiple 
+              description='Developed a comprehensive web application for a fictional hardware store using React.js for the front end,
+designed from scratch in Figma. Created the backend with Node.js and a NoSQL database on MongoDB,
+featuring validated login and encrypted passwords using the bcrypt algorithm, and supported multiple
 profile management. Deployed the backend on Railway.app and the front end on GitHub Pages.'
                 website='https://github.com/ecruz17/la-ferreteria-app'
                 />
               </FadeInComponent>
             </div>
 
-            <div className="col-span-1 md:col-end-4 md:col-span-2">
+            <div className="col-span-1 md:col-start-2 md:col-span-2 overflow-x-hidden">
               <FadeInComponent direction='right'>
-              <ExperienceCard 
+              <ExperienceCard
                 company='FreeWay'
                 charge='Mobile Developer'
                 duration='Oct 2021 – Nov 2023'
@@ -87,8 +87,8 @@ profile management. Deployed the backend on Railway.app and the front end on Git
                 />
               </FadeInComponent>
             </div>
-            
-            <div className="col-span-1 md:col-span-2">
+
+            <div className="col-span-1 md:col-span-2 overflow-x-hidden">
               <FadeInComponent>
               <ExperienceCard
                 company='Universidad de Colima'
@@ -101,6 +101,7 @@ profile management. Deployed the backend on Railway.app and the front end on Git
               </FadeInComponent>
             </div>
           </div>
+
         </article>
       </section>
     </div>

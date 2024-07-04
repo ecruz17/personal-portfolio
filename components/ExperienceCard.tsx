@@ -27,7 +27,7 @@ export const ExperienceCard = ({ company, charge, duration, keyPoints, descripti
         </div>
 
         <div className='flex justify-end items-center'>
-          <Image src={logo} alt="Company_Logo" className='rounded-lg' width={200} height={200}/>
+          <Image src={logo} alt="Company_Logo" height={250} width={250} style={{ objectFit: "contain" }} className='rounded-lg'/>
         </div>
         
         <div className='col-span-2'>

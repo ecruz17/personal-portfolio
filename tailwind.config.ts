@@ -11,6 +11,7 @@ const config: Config = {
       colors: {
         colorBlackGreen: "#091212",
         colorBlackLightGreen: "#1d4443",
+        colorBg: "#1E2020",
         colorBgGreen: "#0C1A1A",
         colorGreen: {
           '50': '#f2fbf9',

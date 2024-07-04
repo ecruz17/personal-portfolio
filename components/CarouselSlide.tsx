@@ -15,7 +15,7 @@ export const CarouselSlide = ({ title, website, img, description }: Props) => {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 750) {
-        setTruncatedDescription(description.substring(0, 20) + (description.length > 20 ? '...' : ''));
+        setTruncatedDescription(description.substring(0, 15) + (description.length > 20 ? '...' : ''));
       } else {
         setTruncatedDescription(description);
       }
@@ -29,15 +29,15 @@ export const CarouselSlide = ({ title, website, img, description }: Props) => {
   }, [description]);
 
   return (
-    <div className="keen-slider__slide flex flex-col justify-end h-[25vh] md:h-[30vw] lg:h-[25vw] items-center bg-blueSecondary shadow-md rounded-md">
+    <div className="keen-slider__slide flex flex-col justify-end h-[20vh] md:h-[30vw] lg:h-[28vw] items-center bg-blueSecondary shadow-md rounded-md">
       <div style={{ position: "relative", height: "100%", width: "100%" }}>
         <Image src={img} alt={title} fill style={{ objectFit: "cover" }} />
       </div>
       <div className="absolute mb-6 z-30 flex flex-col text-justify items-center px-[20%]">
-        <p className="mb-4 text-sm md:text-base">{truncatedDescription}</p>
-        <p className="text-sm md:text-xl lg:text-2xl px-2">{title}</p>
+        <p className="mb-4 text-sm md:text-base text-justify">{truncatedDescription}</p>
+        <p className="text-sm md:text-xl lg:text-2xl px-2 text-center">{title}</p>
         <Link
-          className='flex justify-center items-center text-sm md:text-lg font-bold md:px-4 md:p-2 mx-[20%] my-2 rounded-lg bg-blueSubtitle text-blueBackground hover:brightness-110 transition-105 duration-150'
+          className='flex justify-center items-center text-sm md:text-lg font-bold px-2 md:px-4 md:p-2 mx-[20%] my-2 rounded-md bg-blueSubtitle text-blueBackground hover:brightness-110 transition-105 duration-150'
           target="_blank" href={website} rel="noopener noreferrer">
           TEST
         </Link>

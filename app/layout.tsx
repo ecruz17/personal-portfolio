@@ -9,7 +9,10 @@ const kanit = Kanit({ subsets: ['latin'], weight: ['200', '300', '400', '600'] }
 
 export const metadata: Metadata = {
   title: "Emir Cruz - Software Engineer",
-  description: "Landing page for the Ecruz's Portfolio"
+  description: "Landing page for the Ecruz's Portfolio",
+  icons: {
+    icon: '/ecruz_dev.ico'
+  }
 }
 
 export default function RootLayout({
@@ -26,7 +29,7 @@ export default function RootLayout({
         <meta name="twitter:card" content="/thumbnail.png" />
       </Head>
     <html lang="en">
-      <body className={`${kanit.className} flex flex-col min-h-screen bg-[#1E2020]`}>
+      <body className={`${kanit.className} flex flex-col bg-colorBg overflow-x-hidden`}>
         <ResponsiveNav />
         {
           children
