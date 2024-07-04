@@ -45,7 +45,7 @@ export const Carousel = () => {
     },
     {
         title: "React Query - Issues Filter",
-        website: "https://react-query-filter-1xxfnk8f5-emir-cruzs-projects.vercel.app/",
+        website: "https://react-query-filter-ck1cdw52k-emir-cruzs-projects.vercel.app/issues/list",
         img: "/react_issues.png",
         description: "React + Vite + ReactQuery"
     },
