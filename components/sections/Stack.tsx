@@ -109,7 +109,7 @@ const others = [
 
 export const Stack = () => {
   return (
-    <div className="w-full my-20 pt-20" id='stack'>
+    <div className="w-full my-40 pt-24" id='stack'>
       <section>
         <article>
           <FadeInComponent>

@@ -66,7 +66,7 @@ export const Carousel = () => {
   return (
     <>
       <div className="navigation-wrapper">
-        <div ref={sliderRef} className="keen-slider rounded-md mt-14">
+        <div ref={sliderRef} className="keen-slider rounded-md mt-10">
           {
             slides.map((slide, index) => (
               <CarouselSlide

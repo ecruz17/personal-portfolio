@@ -19,7 +19,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className='fixed z-30 rounded-b-lg w-full bg-blueBackground flex justify-between items-center px-4 h-14 font-semibold shadow-md'>
+    <div className='fixed z-30 w-screen rounded-b-lg bg-blueBackground flex justify-between items-center px-4 h-14 font-semibold shadow-md'>
       <div
         id='home'
         onClick={() => {
@@ -49,7 +49,7 @@ const Navbar = () => {
         ))}
       </ul>
 
-      <div onClick={handleNav} className='md:hidden cursor-pointer mr-8'>
+      <div onClick={handleNav} className='md:hidden cursor-pointer'>
         {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
       </div>
 
