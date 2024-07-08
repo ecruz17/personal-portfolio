@@ -39,13 +39,13 @@ export const Carousel = () => {
     },
     {
       title: "Notes - GoogleOauth",
-      website: "https://notes-andxv00s6-emir-cruzs-projects.vercel.app/",
+      website: "https://notes-3xk9ttocu-emir-cruzs-projects.vercel.app/",
       img: "/notes_app.png",
       description: "Notes WebApp made with NextJS, JavaScript, TailwindCSS, Google OAuth & Firebase"
     },
     {
         title: "React Query - Issues Filter",
-        website: "https://react-query-filter-ck1cdw52k-emir-cruzs-projects.vercel.app/issues/list",
+      website: "https://react-query-filter-ck1cdw52k-emir-cruzs-projects.vercel.app/",
         img: "/react_issues.png",
         description: "React + Vite + ReactQuery"
     },
