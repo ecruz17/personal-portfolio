@@ -12,6 +12,13 @@ export const metadata: Metadata = {
   description: "Landing page for the Ecruz's Portfolio",
   icons: {
     icon: '/ecruz_dev.ico'
+  },
+  openGraph: {
+    images: [
+      {
+        url: 'https://www.ecruz.dev/thumbnail.png',
+      }
+    ]
   }
 }
 
