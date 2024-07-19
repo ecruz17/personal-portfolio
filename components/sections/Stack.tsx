@@ -94,6 +94,10 @@ const others = [
     icon: "https://img.icons8.com/color/480/amazon-web-services.png"
   },
   {
+    name: "Docker",
+    icon: "https://img.icons8.com/fluency/240/docker.png"
+  },
+  {
     name: "Git",
     icon: "https://img.icons8.com/color/480/git.png"
   },
