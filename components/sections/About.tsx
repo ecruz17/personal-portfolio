@@ -20,7 +20,7 @@ export const About = ({ about, id }: Props) => {
                 <GlowingText text="About Me" />
               </FadeInComponent>
               <p className="text-md lg:text-xl mt-10">
-                Hi! I&apos;m <strong className="text-blueSubtitle">Emir Cruz Maldonado</strong>, a dedicated <u className="font-semibold">Software Developer</u> specializing in Web and Mobile application development. My journey in coding began in high school, but my passion for computers has been a part of me since childhood. I&apos;ve had the opportunity to collaborate with industry experts, contributing to projects ranging from a startup logistics app to a company renowned for its work with <strong className="bg-blueSecondary px-1 w-fit">AWS</strong>.
+                Hi! I&apos;m <strong className="text-blueSubtitle">Emir Cruz Maldonado</strong>, a dedicated <u className="font-semibold">Software Developer</u> specialized in Full-Stack Web and Mobile development. My journey began at high school, but my passion for computers has been a part of me since my childhood. I&apos;ve had the opportunity to collaborate with industry experts, contributing to projects ranging from a startup logistics app to a company renowned for its <strong className="bg-blueSecondary px-1">Multicloud</strong> works.
               </p>
             </div>
             <div className="col-span-10 sm:col-span-4 mt-10">
@@ -34,16 +34,16 @@ export const About = ({ about, id }: Props) => {
               <div className="col-span-1 md:col-span-2 font-semibold text-2xl bg-blueBackground rounded-md p-6">
                 SOFT SKILLS
                 <ul className="text-lg font-medium">
-                  - C1 English Level
+                  • C1 English Level
                 </ul>
                 <ul className="text-lg font-medium">
-                  - Collaboration
+                  • Collaboration
                 </ul>
                 <ul className="text-lg font-medium">
-                  - Creative Thinking
+                  • Creative Thinking
                 </ul>
                 <ul className="text-lg font-medium">
-                  - Attention to <strong className="text-blueSubtitle">detail</strong>
+                  • Attention to <strong className="text-blueSubtitle">detail</strong>
                 </ul>
               </div>
             </FadeInComponent>
@@ -52,16 +52,16 @@ export const About = ({ about, id }: Props) => {
               <div className="col-span-1 md:col-span-2 font-semibold text-2xl bg-blueBackground rounded-md p-6">
                 INTERESTS
                 <ul className="text-lg font-medium">
-                  - Music Production & DJ
+                  • Self learning
                 </ul>
                 <ul className="text-lg font-medium">
-                  - Self learning
+                  • Full-Stack Web & Mobile Development
                 </ul>
                 <ul className="text-lg font-medium">
-                  - Web & Mobile Development
+                  • Up-to-date Tech News
                 </ul>
                 <ul className="text-lg font-medium">
-                  - Latest Tech News
+                  • AI
                 </ul>
               </div>
             </FadeInComponent>

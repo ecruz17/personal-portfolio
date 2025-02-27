@@ -2,9 +2,10 @@ import Link from 'next/link';
 import { BiLogoGithub, BiMailSend } from 'react-icons/bi';
 import { BsHeartFill, BsLinkedin } from 'react-icons/bs';
 
-const year = new Date().getFullYear();
 
 export const Footer = () => {
+  const year = new Date().getFullYear();
+  
   return (
     <footer className='mt-auto shadow-md bg-blueBackground text-center py-4 sm:w-full' id='footer'>
       <h2 className='text-2xl md:text-4xl font-bold'>CONTACT ME</h2>
