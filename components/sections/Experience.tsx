@@ -3,10 +3,10 @@ import { ExperienceCard, GlowingText } from '..';
 import { FadeInComponent } from '../FadeInComponent';
 
 const mxmart = [
-'Developed AWS-based applications with Next.js, TypeScript, ReactQuery, and Tailwind CSS.',
-  'Utilized AWS Sevices such as: Amplify, IAM, Cognito, Lambda, DynamoDB, SQS, and API Gateway.',
-  'Used AWS CodeCommit and Git for version control.' ,
-  'Engaged in continuous self-paced learning of AWS services to ensure proficiency and up-to-date skills.' ,
+'Developed and optimized cloud-based applications.',
+  'Utilized Cloud Sevices to build products.',
+  'Used version control tools and agile methodologies.' ,
+  'Engaged in continuous self-paced learning to ensure proficiency and up-to-date skills.' ,
 ];
 
 const freeway = [
@@ -15,10 +15,8 @@ const freeway = [
 
 export const Experience = () => {
   return (
-    <div className="w-full my-16 pt-20" id="experience">
-      <section>
-        <article>
-          <div className='py-10 flex flex-col items-center'>
+    <section className="w-full pt-10" id="experience">
+          <div className='mt-10 flex flex-col items-center'>
             <FadeInComponent>
               <GlowingText
                 text="Experience"
@@ -27,14 +25,14 @@ export const Experience = () => {
             </FadeInComponent>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 overflow-x-hidden">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 overflow-x-hidden">
             <div className="col-span-1 md:col-span-2">
               <FadeInComponent>
                 <ExperienceCard
                   company='MxMart Solutions'
-                  charge='Front End Developer'
+                  charge='Fullstack Developer'
                   duration='Nov 2023 – Present'
-                  description='Developed AWS-based applications for numerous clients with a modern tech stack for front-end and back-end, utilizing various AWS services and maintaining version control while continuously updating AWS skills through self-paced learning.'
+                  description='Developed cloud-based applications for numerous clients with modern techstacks at the Front-end and Back-end. Self-paced learning and certification.'
                   keyPoints={mxmart}
                   logo='/mxmart_logo.png'
                   website='https://mxmartsolutions.com/'
@@ -101,9 +99,6 @@ profile management. Deployed the backend on Railway.app and the front end on Git
               </FadeInComponent>
             </div>
           </div>
-
-        </article>
-      </section>
-    </div>
+    </section>
   )
 }

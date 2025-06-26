@@ -48,7 +48,7 @@ export const ExperienceCard = ({ company, charge, duration, keyPoints, descripti
         </div>
       
         <Link
-          className='col-span-2 flex justify-center items-center text-lg font-bold p-2 mx-0 md:mx-[20%] my-2 rounded-lg bg-blueSubtitle text-blueBackground hover:brightness-110 transition-105 duration-150'
+          className='col-span-2 flex justify-center items-center text-lg font-bold p-2 mx-0 md:mx-[20%] my-2 rounded-md bg-blueSubtitle text-black hover:brightness-110 transition-105 duration-150'
           target="_blank" href={website} rel="noopener noreferrer">
           VISIT WEBSITE
         </Link>

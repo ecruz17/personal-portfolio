@@ -4,7 +4,6 @@ import { useKeenSlider } from "keen-slider/react";
 import { CarouselSlide } from "./CarouselSlide";
 import "keen-slider/keen-slider.min.css";
 import "./CarouselStyles.css";
-import { describe } from "node:test";
 
 export const Carousel = () => {
   const [currentSlide, setCurrentSlide] = React.useState(0)

@@ -4,11 +4,11 @@ import { FadeInComponent } from '../FadeInComponent';
 
 const frontend = [
   {
-    name: "HTML5",
+    name: "HTML",
     icon: "https://img.icons8.com/color/480/html-5--v1.png"
   },
   {
-    name: "CSS3",
+    name: "CSS",
     icon: "https://img.icons8.com/color/480/css3.png"
   },
   {
@@ -16,7 +16,7 @@ const frontend = [
     icon: "https://img.icons8.com/fluency/240/javascript.png"
   },
   {
-    name: "React.js & Native",
+    name: "React",
     icon: "https://img.icons8.com/color/480/react-native.png"
   },
   {
@@ -30,6 +30,10 @@ const frontend = [
   {
     name: "TailwindCSS",
     icon: "https://img.icons8.com/color/480/tailwindcss.png"
+  },
+  {
+    name: "Jest",
+    icon: "https://img.icons8.com/external-tal-revivo-color-tal-revivo/480/external-jest-can-collect-code-coverage-information-from-entire-projects-logo-color-tal-revivo.png"
   },
   {
     name: "Sass",
@@ -63,6 +67,10 @@ const backend = [
     icon: "https://img.icons8.com/ios/250/express-js.png"
   },
   {
+    name: "Python",
+    icon: "https://img.icons8.com/color/480/python--v1.png"
+  },
+  {
     name: "Firebase",
     icon: "https://img.icons8.com/color/480/firebase.png"
   },
@@ -83,8 +91,8 @@ const backend = [
     icon: "https://img.icons8.com/color/480/graphql.png"
   },
   {
-    name: "Postman",
-    icon: "https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/external-postman-is-the-only-complete-api-development-environment-logo-color-tal-revivo.png"
+    name: "Docker",
+    icon: "https://img.icons8.com/fluency/240/docker.png"
   },
 ];
 
@@ -94,31 +102,29 @@ const others = [
     icon: "https://img.icons8.com/color/480/amazon-web-services.png"
   },
   {
-    name: "Docker",
-    icon: "https://img.icons8.com/fluency/240/docker.png"
+    name: "Azure",
+    icon: "https://img.icons8.com/fluency/240/azure-1.png"
   },
   {
     name: "Git",
     icon: "https://img.icons8.com/color/480/git.png"
   },
   {
-    name: "Linux",
+    name: "Virtual Machines",
     icon: "https://img.icons8.com/color/96/linux--v1.png"
   },
   {
-    name: "Python",
-    icon: "https://img.icons8.com/color/480/python--v1.png"
+    name: "Artificial Intelligence",
+    icon: "https://img.icons8.com/color/100/bard--v1.png"
   },
 ];
 
 export const Stack = () => {
   return (
     <div className="w-full my-40 pt-24" id='stack'>
-      <section>
-        <article>
           <FadeInComponent>
           <GlowingText
-            text="Tech Stack"
+            text="Technologies"
             />
           </FadeInComponent>
           {/* FRONTEND */}
@@ -166,8 +172,6 @@ export const Stack = () => {
               ))
             }
           </div>
-        </article>
-      </section>
     </div>
   )
 }

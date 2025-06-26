@@ -1,10 +1,9 @@
 "use client";
 
 import { useRef } from "react";
-import { MainBtn, Stack, Experience, GlowingText, GitHubProfile } from "@/components";
+import { MainBtn, Stack, Experience } from "@/components";
 import { Projects } from "@/components/sections/Projects";
 import Link from "next/link";
-import { FadeInComponent } from '../components/FadeInComponent';
 import { About } from "@/components/sections/About";
 
 export default function Home() {
@@ -24,16 +23,21 @@ export default function Home() {
               <span>dev</span>
             </code>
           </div>
-          <div className="text-xl font-normal my-2">Ready to help you out!</div>
+          <div className="text-xl font-normal my-2">Fullstack • Cloud • AI</div>
           <div className="flex flex-row mt-5 gap-2">
-            <Link href="./ecruz_cv.pdf" download passHref>
-              <MainBtn text="DOWNLOAD CV" isSecondary={false} onClick={() => { }} />
+            <Link href="./ecruz_cv.pdf" target="_blank" rel="noopener noreferrer" passHref>
+              <MainBtn
+                text="RESUME"
+                isSecondary={false}
+                onClick={() => { }}
+              />
             </Link>
             <MainBtn
               text="ABOUT ME"
               isSecondary={true}
               onClick={() => {
-                window.scrollTo({ top: 900, behavior: 'smooth' });
+                const about = document.getElementById("about");
+                about!.scrollIntoView({ behavior: 'smooth' });
               }}
             />
           </div>

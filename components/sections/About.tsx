@@ -9,18 +9,16 @@ interface Props {
   id: string | undefined;
 }
 
-export const About = ({ about, id }: Props) => {
+export const About = ({ id }: Props) => {
   return (
-    <div className="w-full my-44 pt-20" id={id}>
-      <section>
-        <article>
+    <section className="w-full my-44 pt-20" id={id}>
           <div className="grid grid-cols-10 justify-center items-center" >
             <div className="col-span-10 sm:col-span-6">
               <FadeInComponent>
                 <GlowingText text="About Me" />
               </FadeInComponent>
-              <p className="text-md lg:text-xl mt-10">
-                Hi! I&apos;m <strong className="text-blueSubtitle">Emir Cruz Maldonado</strong>, a dedicated <u className="font-semibold">Software Developer</u> specialized in Full-Stack Web and Mobile development. My journey began at high school, but my passion for computers has been a part of me since my childhood. I&apos;ve had the opportunity to collaborate with industry experts, contributing to projects ranging from a startup logistics app to a company renowned for its <strong className="bg-blueSecondary px-1">Multicloud</strong> works.
+              <p className="text-md lg:text-xl mt-10 text-justify pr-4">
+                Hi! I&apos;m <strong className="text-blueSubtitle">Emir Cruz Maldonado</strong>, a dedicated <u className="font-semibold">Software Engineer</u> specialized in Fullstack development at Cloud based solutions with integrated AI. My journey began at high school, but my passion for computers has been a part of me since my childhood. I&apos;ve had the opportunity to collaborate with industry experts, contributing to projects ranging from a startup logistics app to a company renowned for its <strong className="bg-blueSecondary px-[0.5px]">Multicloud</strong> works.
               </p>
             </div>
             <div className="col-span-10 sm:col-span-4 mt-10">
@@ -55,7 +53,7 @@ export const About = ({ about, id }: Props) => {
                   • Self learning
                 </ul>
                 <ul className="text-lg font-medium">
-                  • Full-Stack Web & Mobile Development
+                  • Full-Stack Development
                 </ul>
                 <ul className="text-lg font-medium">
                   • Up-to-date Tech News
@@ -81,16 +79,6 @@ export const About = ({ about, id }: Props) => {
             />
               <p className="text-sm md:text-xl lg:text-2xl">{`</HitMeUp>`}</p>
           </div>
-
-
-        </article>
-      </section>
-    </div>
-
-    // <div ref={about} id="about">
-    //   <section className="my-[30vh] pt-[10vh]">
-        
-    //   </section>
-    // </div>
+    </section>
   )
 }
