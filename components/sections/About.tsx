@@ -11,11 +11,14 @@ interface Props {
 
 export const About = ({ id }: Props) => {
   return (
-    <section className="w-full my-44 pt-20" id={id}>
+    <section className="w-full my-44 pt-20 pb-20" id={id}>
           <div className="grid grid-cols-10 justify-center items-center" >
             <div className="col-span-10 sm:col-span-6">
               <FadeInComponent>
-                <GlowingText text="About Me" />
+            <GlowingText
+              text="About Me"
+              textSize='text-4xl sm:text-6xl md:text-8xl'
+            />
               </FadeInComponent>
               <p className="text-md lg:text-xl mt-10 text-justify pr-4">
                 Hi! I&apos;m <strong className="text-blueSubtitle">Emir Cruz Maldonado</strong>, a dedicated <u className="font-semibold">Software Engineer</u> specialized in Fullstack development at Cloud based solutions with integrated AI. My journey began at high school, but my passion for computers has been a part of me since my childhood. I&apos;ve had the opportunity to collaborate with industry experts, contributing to projects ranging from a startup logistics app to a company renowned for its <strong className="bg-blueSecondary px-[0.5px]">Multicloud</strong> works.

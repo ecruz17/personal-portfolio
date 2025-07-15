@@ -4,6 +4,8 @@ const nextConfig = {
     domains: [
       'avatars.githubusercontent.com',
       'img.icons8.com',
+      'images.credly.com',
+      'img-c.udemycdn.com',
     ],
   },
 }

@@ -16,7 +16,7 @@ const freeway = [
 export const Experience = () => {
   return (
     <section className="w-full pt-10" id="experience">
-          <div className='mt-10 flex flex-col items-center'>
+          <div className='mt-10'>
             <FadeInComponent>
               <GlowingText
                 text="Experience"

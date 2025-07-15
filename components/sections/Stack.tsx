@@ -124,7 +124,8 @@ export const Stack = () => {
     <div className="w-full my-40 pt-24" id='stack'>
           <FadeInComponent>
           <GlowingText
-            text="Technologies"
+          text="Technologies"
+          textSize='text-5xl md:text-8xl'
             />
           </FadeInComponent>
           {/* FRONTEND */}

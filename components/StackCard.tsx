@@ -10,8 +10,8 @@ export const StackCard = ({ name, icon }: Props) => {
     <div className="flex flex-col justify-center bg-slate-700 shadow-md rounded-lg py-2 hover:brightness-125 hover:scale-105 duration-75">
         <Image
           className="w-3/4 mx-auto"
-          width={300}
-          height={300}
+          width={500}
+          height={500}
           src={icon}
           alt={name + "icon"}
         />

@@ -14,12 +14,13 @@ const Navbar = () => {
     { id: 2, text: 'About Me', path: 'about' },
     { id: 3, text: 'Experience', path: 'experience' },
     { id: 4, text: 'Projects', path: 'projects' },
-    { id: 5, text: 'Technologies', path: 'stack' },
-    { id: 6, text: 'Contact', path: 'footer' },
+    { id: 5, text: 'Certifications', path: 'certifications' },
+    { id: 6, text: 'Technologies', path: 'stack' },
+    { id: 7, text: 'Contact', path: 'footer' },
   ];
 
   return (
-    <div className='fixed z-30 w-screen rounded-b-lg bg-blueBackground flex justify-between items-center px-4 h-14 font-semibold shadow-md'>
+    <div className='fixed z-30 w-full bg-blueBackground flex justify-between items-center px-4 h-12 font-semibold shadow-md'>
       <div
         id='home'
         onClick={() => {
@@ -27,16 +28,16 @@ const Navbar = () => {
         }}
         className='cursor-pointer'
       >
-        <h2 className='text-2xl font-medium text-blueSubtitle flex items-center cursor-pointer hover:scale-105 duration-75'>
+        <h2 className='text-base sm:text-xl font-medium text-blueSubtitle flex items-center cursor-pointer hover:scale-105 duration-75'>
           ecruz<p className='text-white'>dev</p>
         </h2>
       </div>
 
-      <ul className='hidden md:flex'>
+      <ul className='hidden md:flex relative'>
         {navItems.map(item => (
           <li
             key={item.id}
-            className='p-4 m-2 cursor-pointer uppercase hover:text-blueSubtitle duration-100'
+            className='text-xs sm:text-[16px] p-4 m-2 cursor-pointer uppercase hover:text-blueSubtitle duration-100'
             onClick={() => {
               const element = document.getElementById(item.path);
               if (element) {

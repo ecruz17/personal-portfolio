@@ -5,6 +5,7 @@ import { MainBtn, Stack, Experience } from "@/components";
 import { Projects } from "@/components/sections/Projects";
 import Link from "next/link";
 import { About } from "@/components/sections/About";
+import Certifications from "@/components/sections/Certifications";
 
 export default function Home() {
   const about = useRef<HTMLDivElement | null>(null);
@@ -47,6 +48,7 @@ export default function Home() {
       <About about={about} id="about"/>
       <Experience />
       <Projects />
+      <Certifications />
       <Stack />
     </div>
   );
